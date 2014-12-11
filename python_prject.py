@@ -1,4 +1,4 @@
-f = open("C:\Users\Cameron\Documents\GitHub\Python_Project\wordsearch3","r")
+f = open("C:\Users\S581267\Documents\GitHub\Python-Project1\wordsearch3","r")
 #Find the height, width and how many words to look for in the file.
 height = int(f.readline())
 width = int(f.readline()) 
@@ -21,6 +21,8 @@ found = [0 for f in range (len(lookFor))]
 def search(placesToCheck,position,y,x,):
     pDi = -1
     #get the values forom the list to see which adjacent places you can check
+    #cykle through the list keeping track of whare you are in it with pDi
+    #the position in the list represents the direction
     for di in (placesToCheck):
         pDi = pDi + 1
         if True == True:
@@ -31,6 +33,7 @@ def search(placesToCheck,position,y,x,):
                             if letter == position[y-char][x-char]:
                                 if char == len(lookFor[word])-2:
                                     found[word] = 1
+                                    #print the cordanits, the direction and the word you found
                                     print str(x+1) + "," + str(y+1) + " Direction:" +"Up and leaft, " + lookFor[word]
                                 placesToCheck[pDi] = 0
                             else:
@@ -135,6 +138,9 @@ for y in range (height):
         for word in range (len(lookFor)):
             if position[y][x] == lookFor[word][0] and found[word] == False:
                 placesToCheck = []
+                # make a list that represents the directions you can check relitive to 
+                # the curent position in the wordsearch so you do not try to check owtside of the list 
+                # when following a word you have found
                 if y == 0 and x == 0:
                     placesToCheck = [0,0,0,0,1,0,1,1]
                 elif y == 0 and x == width-1:
