@@ -142,6 +142,8 @@ for y in range (height):
                 # the curent position in the wordsearch so you do not try to check owtside of the list 
                 # when following a word you have found
                 if y == 0 and x == 0:
+                    #the position in the list represents each of the directions
+                    #upLeaft,up,upRight,Leaft,Right,DounRight,Doun,DounRight
                     placesToCheck = [0,0,0,0,1,0,1,1]
                 elif y == 0 and x == width-1:
                     placesToCheck = [0,0,0,1,0,1,1,0]
@@ -154,7 +156,7 @@ for y in range (height):
                 elif y == height-1:
                     placesToCheck = [1,1,1,1,1,0,0,0]
                 elif x == 0:
-                    placesToCheck = [0,1,1,0,1,0,1,1,]
+                    placesToCheck = [0,1,1,0,1,0,1,1]
                 elif x == width-1:
                     placesToCheck = [1,1,0,1,0,1,1,0]
                 else:
