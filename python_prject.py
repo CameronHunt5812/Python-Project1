@@ -1,4 +1,4 @@
-f = open("C:\Users\S581267\Documents\GitHub\Python-Project1\wordsearch3","r")
+f = open("C:\Users\Cameron\Documents\GitHub\Python-Project1\wordsearch3","r")
 #Find the height, width and how many words to look for in the file.
 height = int(f.readline())
 width = int(f.readline()) 
@@ -34,7 +34,7 @@ def search(placesToCheck,position,y,x,):
                                 if char == len(lookFor[word])-2:
                                     found[word] = 1
                                     #print the cordanits, the direction and the word you found
-                                    print str(x+1) + "," + str(y+1) + " Direction:" +"Up and leaft, " + lookFor[word]
+                                    print str(x+1) + "," + str(y+1) + " Direction: Up and leaft, " + lookFor[word]
                                 placesToCheck[pDi] = 0
                             else:
                                 break
