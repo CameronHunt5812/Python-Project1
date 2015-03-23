@@ -35,7 +35,7 @@ def search(placesToCheck,position,y,x,):
                             if char == len(lookFor[word])-2:
                                 found[word] = 1
                                 #print the cordanits, the direction and the word you found
-                                print str(x+1) + "," + str(y+1) + " Direction:" +"Up and leaft, " + lookFor[word]
+                                print str(x+1) + "," + str(y+1) + " Direction: Up and leaft, " + lookFor[word]
                             placesToCheck[Direct] = 0
                         else:
                             break
@@ -48,7 +48,7 @@ def search(placesToCheck,position,y,x,):
                         if letter == position[y-char][x]:
                             if char == len(lookFor[word])-2:
                                 found[word] = 1
-                                print str(x+1) + "," + str(y+1) + " Direction:" +"Up, " + lookFor[word]
+                                print str(x+1) + "," + str(y+1) + " Direction: Up, " + lookFor[word]
                             placesToCheck[Direct] = 0
                         else:
                             break
@@ -61,7 +61,7 @@ def search(placesToCheck,position,y,x,):
                         if letter == position[y-char][x+char]:
                             if char == len(lookFor[word])-2:
                                 found[word] = 1
-                                print str(x+1) + "," + str(y+1) + " Direction:" +"Up and Right, " + lookFor[word]
+                                print str(x+1) + "," + str(y+1) + " Direction: Up and Right, " + lookFor[word]
                             placesToCheck[Direct] = 0
                         else:
                             break
@@ -74,7 +74,7 @@ def search(placesToCheck,position,y,x,):
                         if letter == position[y][x-char]:
                             if char == len(lookFor[word])-2:
                                 found[word] = 1
-                                print str(x+1) + "," + str(y+1) + " Direction:" +"Leaft, " + lookFor[word]
+                                print str(x+1) + "," + str(y+1) + " Direction: Leaft, " + lookFor[word]
                             placesToCheck[Direct] = 0
                         else:
                             break
@@ -87,7 +87,7 @@ def search(placesToCheck,position,y,x,):
                         if letter == position[y][x+char]:
                             if char == len(lookFor[word])-2:
                                 found[word] = 1
-                                print str(x+1) + "," + str(y+1) + " Direction:" +"Right, " + lookFor[word]
+                                print str(x+1) + "," + str(y+1) + " Direction: Right, " + lookFor[word]
                             placesToCheck[Direct] = 0
                         else:
                             break
@@ -100,7 +100,7 @@ def search(placesToCheck,position,y,x,):
                         if letter == position[y+char][x-char]:
                             if char == len(lookFor[word])-2:
                                 found[word] = 1
-                                print str(x+1) + "," + str(y+1) + " Direction:" +"Doun and Leaft, " + lookFor[word]
+                                print str(x+1) + "," + str(y+1) + " Direction: Doun and Leaft, " + lookFor[word]
                             placesToCheck[Direct] = 0
                         else:
                             break
@@ -113,7 +113,7 @@ def search(placesToCheck,position,y,x,):
                         if letter == position[y+char][x]:
                             if char == len(lookFor[word])-2:
                                 found[word] = 1
-                                print str(x+1) + "," + str(y+1) + " Direction:" +"Doun, " + lookFor[word]
+                                print str(x+1) + "," + str(y+1) + " Direction: Doun, " + lookFor[word]
                             placesToCheck[Direct] = 0
                         else:
                             break
@@ -126,7 +126,7 @@ def search(placesToCheck,position,y,x,):
                         if letter == position[y+char][x+char]:
                             if char == len(lookFor[word])-2:
                                 found[word] = 1
-                                print str(x+1) + "," + str(y+1) + " Direction:" +"Doun and Right, " + lookFor[word]
+                                print str(x+1) + "," + str(y+1) + " Direction: Doun and Right, " + lookFor[word]
                             placesToCheck[Direct] = 0
                         else:
                             break
